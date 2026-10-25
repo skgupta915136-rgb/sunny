@@ -25,3 +25,12 @@ npm run dev
 ```
 
 Built with React, Vite, Tailwind CSS, TypeScript, Express, and modern Google GenAI SDK.
+
+## 🌐 Deploying on Render
+
+1. Create a new **Web Service** in Render and connect the public `skgupta915136-rgb/sunny` GitHub repository.
+2. Select the `main` branch and use these commands:
+   - **Build:** `npm install && npm run build`
+   - **Start:** `npm start`
+3. In the service's **Environment** settings, add `GEMINI_API_KEY` with your Google Gemini API key. Keep the key in Render's private environment settings; never commit it to GitHub.
+4. Deploy the service. Render will provide a public `onrender.com` URL.
