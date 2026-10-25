@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sara AI - Multilingual Personal Assistant</title>
+    <script>
+      (function() {
+        try {
+          var _f = window.fetch;
+          var desc = Object.getOwnPropertyDescriptor(window, 'fetch') ||
+                     (window.constructor && Object.getOwnPropertyDescriptor(window.constructor.prototype, 'fetch')) ||
+                     Object.getOwnPropertyDescriptor(Object.getPrototypeOf(window), 'fetch');
+          if (desc && !desc.set) {
+            Object.defineProperty(window, 'fetch', {
+              get: function() { return _f; },
+              set: function(fn) { _f = fn; },
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {}
+
+        window.addEventListener('error', function(event) {
+          if (event && event.message && event.message.indexOf('fetch') !== -1 && event.message.indexOf('getter') !== -1) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+    <meta name="description" content="Meet Sara AI (सारा AI), created by Mister Sunny Pannalal Gupta ji. A warm, friendly, intelligent companion fluent in Indian regional languages with multimodal understanding." />
+    <meta property="og:title" content="Sara AI - Multilingual Personal Assistant" />
+    <meta property="og:description" content="Meet Sara AI (सारा AI), created by Mister Sunny Pannalal Gupta ji. A warm, friendly, intelligent companion fluent in Indian regional languages with multimodal understanding." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/src/assets/images/sara_ai_logo_1791460473992.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/jpeg" href="/src/assets/images/sara_ai_logo_1791460473992.jpg" />
+    <link rel="apple-touch-icon" href="/src/assets/images/sara_ai_logo_1791460473992.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rozha+One&family=Rozha+One&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-rose-500/30 selection:text-rose-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

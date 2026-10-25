@@ -1,0 +1,6 @@
+{
+  "name": "Sara AI - Multilingual Personal Assistant",
+  "description": "Meet Sara AI (सारा AI), created by Mister Sunny Pannalal Gupta ji. A warm, friendly, intelligent companion fluent in Indian regional languages with multimodal understanding.",
+  "requestFramePermissions": ["microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
